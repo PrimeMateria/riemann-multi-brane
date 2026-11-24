@@ -1,0 +1,18 @@
+{
+  "project": "RhZmb",
+  "prismpm_version": "0.5.0",
+  "build_id": "8f461e23608ddd4cc4df4c6d1dab2d2ceb19e6b446eda199c3c6fe5abbed1002",
+  "semantic_id": "83d06f45ff166e4e0b7ef883fe6b88d2f2075cb28903b71c3cfded4dc315d7b3",
+  "snapshot_id": "8e0fe8be79001a45a72c3a0a9210a9ec6d8ece1f736b8c5c39a11a8849b3f3b0",
+  "source_id": "97b8d8fd426d17f8dca2d674973080e592b39c9e14993ab05a04370d9e3283e2",
+  "schema": "prismpm/model-document/3",
+  "profile": "prismpm/native-library/1",
+  "crate": "rh-zero-multi-brane-0.1.0.crate",
+  "exports": [
+    "RhZmb.RhZmb.acceptance",
+    "RhZmb.RhZmb.identity"
+  ],
+  "acceptance_roots": [
+    "RhZmb.RhZmb.acceptance"
+  ]
+}

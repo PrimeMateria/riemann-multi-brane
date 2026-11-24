@@ -1,0 +1,18 @@
+spec = "lexlean/entry/1"
+id = "ampledeg"
+category = "type-noun"
+signature = "(sort (type 0))"
+surface_arity = 0
+frame = "atom"
+
+[denotation]
+kind = "document"
+module = "F1Square"
+component = "ampledeg"
+
+[[form]]
+id = "ampledeg"
+channel = "text"
+surface = "ample degree"
+canonical_source = true
+features = ["article-a", "lower-case", "singular"]

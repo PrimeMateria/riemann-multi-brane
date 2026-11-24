@@ -1,0 +1,21 @@
+spec = "lexlean/entry/1"
+id = "neronpairing"
+category = "function"
+signature = "(pi ((explicit x (const rhzmb.f1-square::divclass)) (explicit y (const rhzmb.f1-square::ampledeg))) (const lexlean.std.nat::nat))"
+surface_arity = 2
+frame = "call"
+
+[denotation]
+kind = "document"
+module = "F1Square"
+component = "neronpairing"
+
+[[form]]
+id = "neronpairing"
+channel = "math"
+surface = "neronpairing"
+canonical_source = true
+features = []
+
+[render]
+math = "(seq (operator-name neronpairing) (paren (seq (slot 0) (token comma) (space) (slot 1))))"

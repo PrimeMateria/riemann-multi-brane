@@ -1,0 +1,21 @@
+spec = "lexlean/entry/1"
+id = "combinatorialchannel"
+category = "function"
+signature = "(pi ((explicit x (const rhzmb.dual-channel::embedscale))) (const lexlean.std.nat::nat))"
+surface_arity = 1
+frame = "call"
+
+[denotation]
+kind = "document"
+module = "DualChannel"
+component = "combinatorialchannel"
+
+[[form]]
+id = "combinatorialchannel"
+channel = "math"
+surface = "combinatorialchannel"
+canonical_source = true
+features = []
+
+[render]
+math = "(seq (operator-name combinatorialchannel) (paren (slot 0)))"

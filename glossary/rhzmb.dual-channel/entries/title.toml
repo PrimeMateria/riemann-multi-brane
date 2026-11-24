@@ -1,0 +1,16 @@
+spec = "lexlean/entry/1"
+id = "title"
+category = "label-word"
+surface_arity = 0
+frame = "atom"
+
+[denotation]
+kind = "defined"
+value = "(const lexlean.std.nat::nat)"
+
+[[form]]
+id = "title"
+channel = "text"
+surface = "Coupled dual channel spectral and sieve regularizers"
+canonical_source = true
+features = ["sentence-case", "singular"]

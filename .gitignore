@@ -1,0 +1,4 @@
+.lake/
+.lexlean/
+__pycache__/
+*.pyc

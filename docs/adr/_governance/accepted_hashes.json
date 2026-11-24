@@ -1,0 +1,10 @@
+{
+  "ADR-0001-adopt-append-only-adr-practice.md": "b8fdbcf5a35b86af35618082c0cb94016a098e316868938f1b2a22c42980f885",
+  "ADR-0002-dual-plane-architecture.md": "8e17573f307db6ac8fb6228d418dda2c4994a408c4fffc285ae80c49cd8ca658",
+  "ADR-0003-provenance-basis-taxonomy.md": "44f7fad3b722ecd45e27b21856389ee21b3cbff2bfa34fde7f182fb3ca043ea4",
+  "ADR-0004-f1-square-multi-brane-geometry.md": "79517031aac2a7ab65a89b66e0af68298fccec628f093cc250a7f909619247bb",
+  "ADR-0005-prime-gated-combinatorial-bounds.md": "7e97a723d18ee716bfa8d8233aea4978296cf6c1fd5c66693f87bfd65180d338",
+  "ADR-0006-coupled-dual-channel-regularizers.md": "b3f100e5439da4e56f33bf1a7c8865f7e7306db6ce7782148a3a87296c518553",
+  "ADR-0007-production-test-harness-benchmarks-ci-cd.md": "6ecbf3a376988d5c35ce01180c4565a06b32d8f286ff9bf96cab334d390fac00",
+  "ADR-0008-trr-milestones-production-implementation.md": "6ada39be0b36ea4374e88c230db4174cb448703fb0de7b428cdeefca5c37bbbc"
+}

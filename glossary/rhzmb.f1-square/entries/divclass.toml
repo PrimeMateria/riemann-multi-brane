@@ -1,0 +1,18 @@
+spec = "lexlean/entry/1"
+id = "divclass"
+category = "type-noun"
+signature = "(sort (type 0))"
+surface_arity = 0
+frame = "atom"
+
+[denotation]
+kind = "document"
+module = "F1Square"
+component = "divclass"
+
+[[form]]
+id = "divclass"
+channel = "text"
+surface = "divisor class"
+canonical_source = true
+features = ["article-a", "lower-case", "singular"]

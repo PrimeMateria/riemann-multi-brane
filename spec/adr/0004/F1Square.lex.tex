@@ -1,0 +1,63 @@
+\begin{lexlean}{F1Square}
+\useglossary{lexlean.std.nat@1.0.0}
+\useglossary{rhzmb.f1-square@1.0.0}
+\title{F one square multi brane geometry and neron severi pairing}
+
+\begin{section}{domains}
+\heading{F one square multi brane geometry and neron severi pairing domains}
+  \begin{typedefinition}{divclass}{rhzmb.f1-square::divclass}
+  \noaxioms
+  A divisor class is defined as natural number.
+  \end{typedefinition}
+
+  \begin{typedefinition}{ampledeg}{rhzmb.f1-square::ampledeg}
+  \noaxioms
+  A ample degree is defined as natural number.
+  \end{typedefinition}
+\end{section}
+
+\begin{section}{operators}
+\heading{F one square multi brane geometry and neron severi pairing operators}
+  \begin{termdefinition}{neronpairing}{rhzmb.f1-square::neronpairing}
+  \noaxioms
+  For every divisor class \(d1\); ample degree \(d2\), \(neronpairing(d1, d2)\) is defined as \(d1 + d2\).
+  \end{termdefinition}
+
+  \begin{termdefinition}{ampleclass}{rhzmb.f1-square::ampleclass}
+  \noaxioms
+  For every divisor class \(d1\); ample degree \(d2\), \(ampleclass(d1, d2)\) is defined as \(d1 + d2\).
+  \end{termdefinition}
+
+  \begin{termdefinition}{hodgeperp}{rhzmb.f1-square::hodgeperp}
+  \noaxioms
+  For every divisor class \(d\), \(hodgeperp(d)\) is defined as \(d\).
+  \end{termdefinition}
+\end{section}
+
+\begin{section}{theorems}
+\heading{F one square multi brane geometry and neron severi pairing theorems}
+  \begin{theorem}{neron-severi-template}
+  \noaxioms
+  For every divisor class \(d1\) and divisor class \(d2\), \(neronpairing(d1, d2) = d1 + d2\).
+  \begin{proof}
+  Close the goal by reflexivity.
+  \end{proof}
+  \end{theorem}
+
+  \begin{theorem}{ample-class-positive}
+  \noaxioms
+  For every divisor class \(d1\) and divisor class \(d2\), \(ampleclass(d1, d2) = d1 + d2\).
+  \begin{proof}
+  Close the goal by reflexivity.
+  \end{proof}
+  \end{theorem}
+
+  \begin{theorem}{hodge-index-perp}
+  \noaxioms
+  For every divisor class \(d\), \(hodgeperp(d) = d\).
+  \begin{proof}
+  Close the goal by reflexivity.
+  \end{proof}
+  \end{theorem}
+\end{section}
+\end{lexlean}

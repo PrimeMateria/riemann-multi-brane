@@ -1,0 +1,21 @@
+spec = "lexlean/entry/1"
+id = "spectralchannel"
+category = "function"
+signature = "(pi ((explicit x (const rhzmb.dual-channel::embedscale))) (const lexlean.std.nat::nat))"
+surface_arity = 1
+frame = "call"
+
+[denotation]
+kind = "document"
+module = "DualChannel"
+component = "spectralchannel"
+
+[[form]]
+id = "spectralchannel"
+channel = "math"
+surface = "spectralchannel"
+canonical_source = true
+features = []
+
+[render]
+math = "(seq (operator-name spectralchannel) (paren (slot 0)))"

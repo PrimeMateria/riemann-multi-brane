@@ -1,0 +1,21 @@
+spec = "lexlean/entry/1"
+id = "ampleclass"
+category = "function"
+signature = "(pi ((explicit x (const rhzmb.f1-square::divclass)) (explicit y (const rhzmb.f1-square::ampledeg))) (const lexlean.std.nat::nat))"
+surface_arity = 2
+frame = "call"
+
+[denotation]
+kind = "document"
+module = "F1Square"
+component = "ampleclass"
+
+[[form]]
+id = "ampleclass"
+channel = "math"
+surface = "ampleclass"
+canonical_source = true
+features = []
+
+[render]
+math = "(seq (operator-name ampleclass) (paren (seq (slot 0) (token comma) (space) (slot 1))))"

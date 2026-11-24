@@ -1,0 +1,33 @@
+\begin{lexlean}{RhZmb}
+\useglossary{lexlean.std.bool@1.2.0}
+\useglossary{lexlean.std.nat@1.2.0}
+\importmodule{Foundation.Library.V1.Model}
+\title{Natural number}
+\begin{semanticmodule}
+definition{name: identity, parameters: [value : Nat], result: Nat, body: value}
+
+definition{
+  name: acceptance,
+  parameters: [],
+  result: Bool,
+  body: (prim equal (identity 42) 42 : Bool)
+}
+
+definition{
+  name: rhzmbLibrary,
+  parameters: [],
+  result: Foundation.Library.V1.Model::NativeLibrary,
+  body: (record Foundation.Library.V1.Model::NativeLibrary {
+    profile := "prismpm/native-library/1",
+    name := "Riemann-Zero Multi-Brane",
+    cargoName := "rh-zero-multi-brane",
+    cargoVersion := "0.1.0",
+    cargoDescription := "Formal F1-square multi-brane geometry and combinatorial bounds",
+    cargoRepository := "https://github.com/UOR-Foundation/PrismPM",
+    cargoHomepage := "https://github.com/UOR-Foundation/PrismPM",
+    exportRoots := (cons "RhZmb.RhZmb.acceptance" (cons "RhZmb.RhZmb.identity" (nil String))),
+    acceptanceRoots := (cons "RhZmb.RhZmb.acceptance" (nil String))
+  })
+}
+\end{semanticmodule}
+\end{lexlean}

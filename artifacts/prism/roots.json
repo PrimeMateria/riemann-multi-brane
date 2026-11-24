@@ -1,0 +1,5 @@
+{
+  "erased_proof_dependencies": [],
+  "included_definitions": ["RhZmb.RhZmb.acceptance","RhZmb.RhZmb.identity"],
+  "requested_roots": ["RhZmb.RhZmb.acceptance","RhZmb.RhZmb.identity"]
+}

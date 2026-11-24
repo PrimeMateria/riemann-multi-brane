@@ -1,0 +1,22 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\section*{Semantic declarations}
+\subsection*{\texttt{identity}}
+\noindent Kind: \texttt{definition}.\par
+\noindent Parameters: \texttt{(value : Nat)}.\par
+\noindent Type: \texttt{Nat}.\par
+\noindent Definition: \texttt{value}.\par
+\noindent Axiom policy: \texttt{none}.\par
+\subsection*{\texttt{acceptance}}
+\noindent Kind: \texttt{definition}.\par
+\noindent Type: \texttt{Bool}.\par
+\noindent Definition: \texttt{(LexLeanRuntime.equal (identity (42)) (42) : Bool)}.\par
+\noindent Axiom policy: \texttt{none}.\par
+\subsection*{\texttt{rhzmbLibrary}}
+\noindent Kind: \texttt{definition}.\par
+\noindent Type: \texttt{RhZmb.Foundation.Library.V1.Model.NativeLibrary}.\par
+\noindent Definition: \texttt{(\{ profile := "prismpm/native-library/1", name := "Riemann-Zero Multi-Brane", cargoName := "rh-zero-multi-brane", cargoVersion := "0.1.0", cargoDescription := "Formal F1-square multi-brane geometry and combinatorial bounds", cargoRepository := "https://github.com/UOR-Foundation/PrismPM", cargoHomepage := "https://github.com/UOR-Foundation/PrismPM", exportRoots := ("RhZmb.RhZmb.acceptance" :: ("RhZmb.RhZmb.identity" :: ([] : List (String)))), acceptanceRoots := ("RhZmb.RhZmb.acceptance" :: ([] : List (String))) \} : RhZmb.Foundation.Library.V1.Model.NativeLibrary)}.\par
+\noindent Axiom policy: \texttt{none}.\par
+\end{document}

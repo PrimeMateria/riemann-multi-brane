@@ -1,0 +1,21 @@
+spec = "lexlean/entry/1"
+id = "hodgeperp"
+category = "function"
+signature = "(pi ((explicit x (const rhzmb.f1-square::divclass))) (const lexlean.std.nat::nat))"
+surface_arity = 1
+frame = "call"
+
+[denotation]
+kind = "document"
+module = "F1Square"
+component = "hodgeperp"
+
+[[form]]
+id = "hodgeperp"
+channel = "math"
+surface = "hodgeperp"
+canonical_source = true
+features = []
+
+[render]
+math = "(seq (operator-name hodgeperp) (paren (slot 0)))"

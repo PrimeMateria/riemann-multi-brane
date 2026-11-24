@@ -1,0 +1,21 @@
+spec = "lexlean/entry/1"
+id = "rbinloss"
+category = "function"
+signature = "(pi ((explicit x (const rhzmb.combinatorial-bounds::sieveindex))) (const lexlean.std.nat::nat))"
+surface_arity = 1
+frame = "call"
+
+[denotation]
+kind = "document"
+module = "CombinatorialBounds"
+component = "rbinloss"
+
+[[form]]
+id = "rbinloss"
+channel = "math"
+surface = "rbinloss"
+canonical_source = true
+features = []
+
+[render]
+math = "(seq (operator-name rbinloss) (paren (slot 0)))"

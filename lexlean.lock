@@ -1,0 +1,87 @@
+spec = "lexlean/lock/3"
+language = "1.0"
+compiler_semantics = "blake3:fe8a55baee71f49857d4ff8e41462241778c38c6a55ad291c3aa6e9f900c7ae7"
+project_config_kappa = "blake3:c0fbe57182ffe899ef953bf80ab23e0f56074909b811b1f290119a4aa42ff598"
+lean_toolchain = "leanprover/lean4:v4.32.2"
+
+[[workspace_file]]
+path = "lake-manifest.json"
+kappa = "blake3:c58540efed2a0daafaa88e3e86105c496bc04f5cbddc0cc2d4d43455c4646d85"
+
+[[workspace_file]]
+path = "lakefile.toml"
+kappa = "blake3:3fbcc228f8fb34e3fb27e80a534b57cb7d5d8ab1957ac041b35356d641d01deb"
+
+[[workspace_file]]
+path = "lean-toolchain"
+kappa = "blake3:a97821a267801086f27c546268ed08ab29cf5a2d15de1258094c5f95ace394aa"
+
+[[package]]
+id = "lexlean.core"
+version = "1.0.0"
+kind = "builtin"
+source = "embedded"
+revision = "compiler-semantics"
+tree_kappa = "blake3:c52aac6ad8da8eaa47e1dd7889bc753b429d63edd302a8f29b0543ffa9c81749"
+manifest_kappa = "blake3:2a3d21dc3ee623e0ca321b370300231414630b9df5c081589ccb7feb369fd64a"
+imports = []
+
+[[package]]
+id = "lexlean.std.int"
+version = "1.0.0"
+kind = "builtin"
+source = "embedded"
+revision = "compiler-semantics"
+tree_kappa = "blake3:009d77b67df20e833dee0e6bc01358f4bacdb0b26e33ccc95a260393de6deeac"
+manifest_kappa = "blake3:b2a8b75a359c8b8e9865c2f8ba865e2ad026d99ba245a108ec4deb6eaa9e70d4"
+imports = ["lexlean.core@1.0.0"]
+
+[[package]]
+id = "lexlean.std.nat"
+version = "1.0.0"
+kind = "builtin"
+source = "embedded"
+revision = "compiler-semantics"
+tree_kappa = "blake3:a90c4b1f2cade8d1dc83cf60a5d27c548b3248efb70f97a841e7b82a7c4c6e32"
+manifest_kappa = "blake3:89745bca9a2e17a97ff6c8f215009f40a59d8511dda4c49bef2a178f0fdc70a5"
+imports = ["lexlean.core@1.0.0"]
+
+[[package]]
+id = "lexlean.uor.atlas"
+version = "1.0.0"
+kind = "builtin"
+source = "embedded"
+revision = "compiler-semantics"
+tree_kappa = "blake3:2a0944f50d1dcbff11f46d79ad62eb4dc4111ff61c79c971a087b2da1f6813f7"
+manifest_kappa = "blake3:5e94f8662f15f9a5878e851b7ea5b9b6b123d59e87d291c9964a8246ee36d29c"
+imports = ["lexlean.core@1.0.0", "lexlean.std.int@1.0.0", "lexlean.std.nat@1.0.0"]
+
+[[package]]
+id = "rhzmb.combinatorial-bounds"
+version = "1.0.0"
+kind = "path"
+source = "glossary/rhzmb.combinatorial-bounds"
+revision = "none"
+tree_kappa = "blake3:fa4b89a1110279c6262f51a7606e7a83e270beab7c9f1bc05f9462798211115b"
+manifest_kappa = "blake3:4fa7cc80e93d63ea2983d68101aa9fa2c800854a6708e35569a05860afc776a6"
+imports = ["lexlean.core@1.0.0", "lexlean.std.nat@1.0.0"]
+
+[[package]]
+id = "rhzmb.dual-channel"
+version = "1.0.0"
+kind = "path"
+source = "glossary/rhzmb.dual-channel"
+revision = "none"
+tree_kappa = "blake3:0edf6e40dab9a824095fb97a30b97e8fe37c26c07f9681e1eea62c37d5bbbc4a"
+manifest_kappa = "blake3:be392ffd20e4da5aed3c3623d41db85069898899ca5cccace44f0f75b9329182"
+imports = ["lexlean.core@1.0.0", "lexlean.std.nat@1.0.0"]
+
+[[package]]
+id = "rhzmb.f1-square"
+version = "1.0.0"
+kind = "path"
+source = "glossary/rhzmb.f1-square"
+revision = "none"
+tree_kappa = "blake3:d872e668a83fbb6bd698ab7b68e95f97896d979fc1e76e9999ed75f32e4178b2"
+manifest_kappa = "blake3:871e4e4c0e77bbdd4d693d8935078eb15de9d81d8e345acc92f69c9ff054b18f"
+imports = ["lexlean.core@1.0.0", "lexlean.std.nat@1.0.0"]

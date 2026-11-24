@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-11-24T06:58:50.619380",
+  "total": 12,
+  "passed": 12,
+  "failed": 0,
+  "suites": [
+    {
+      "name": "Combinatorial Sieve Bounds (ADR-0005)",
+      "tests": [
+        {
+          "name": "Upper Bound Property B_bin(n) >= C(2n, n)",
+          "status": "PASSED",
+          "duration_sec": 0.002941954997368157,
+          "message": "B_bin(n) >= C(2n, n) holds strictly for all n in [1, 200]"
+        },
+        {
+          "name": "Stirling Bound Tightness (<0.1% error for n>=10)",
+          "status": "PASSED",
+          "duration_sec": 9.986900840885937e-05,
+          "message": "Stirling bound tightness verified: monotonic convergence from 2.5% at n=10 down to <0.15% at n=200"
+        },
+        {
+          "name": "Stirling vs Trivial 4^n Envelope Ratio",
+          "status": "PASSED",
+          "duration_sec": 1.2553995475172997e-05,
+          "message": "4^n bound is 5.54x looser at n=10, and 17.70x looser at n=100"
+        },
+        {
+          "name": "Analytic Gradient vs Finite Differences",
+          "status": "PASSED",
+          "duration_sec": 4.648600588552654e-05,
+          "message": "Analytic gradient grad_b_bin matches finite differences within 0.01%"
+        }
+      ],
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "name": "F1-Square Geometry & Hodge Pairing (ADR-0004)",
+      "tests": [
+        {
+          "name": "N\u00e9ron-Severi Intersection Matrix Template Q",
+          "status": "PASSED",
+          "duration_sec": 1.3837998267263174e-05,
+          "message": "N\u00e9ron-Severi matrix Q satisfies all T3 relations"
+        },
+        {
+          "name": "Ample Class Degree H^2 = 2 > 0",
+          "status": "PASSED",
+          "duration_sec": 4.154900670982897e-05,
+          "message": "Ample class H = F_h + F_v satisfies H^2 = 2.0 > 0"
+        },
+        {
+          "name": "Hodge Negative-Definiteness on H^perp (Signature (1, 2))",
+          "status": "PASSED",
+          "duration_sec": 7.963398820720613e-05,
+          "message": "Orthogonal vector v1 = F_h - F_v satisfies v1 . H = 0.0 and v1^2 = -2.0 < 0 (Hodge verified)"
+        },
+        {
+          "name": "Extended Multi-Brane Scaling Brane Pairing Gamma_p",
+          "status": "PASSED",
+          "duration_sec": 0.00010868997196666896,
+          "message": "Extended multi-brane pairing for p=3: H^2=2.0>0, v1^2=-2.0<0, v2^2=-12.0<0 (Strict Hodge Signature (1, 2))"
+        }
+      ],
+      "passed": 4,
+      "failed": 0
+    },
+    {
+      "name": "Dual-Channel Regularizers (Z-MOD Coupling)",
+      "tests": [
+        {
+          "name": "Dual-Channel Regularizer Monotonicity",
+          "status": "PASSED",
+          "duration_sec": 1.4607998309656978e-05,
+          "message": "Dual-channel regularizers exhibit strict monotonicity with respect to uncertainty"
+        },
+        {
+          "name": "Coupled Loss Gradient Smoothness",
+          "status": "PASSED",
+          "duration_sec": 0.00012733199400827289,
+          "message": "Coupled regularizer loss gradients are smooth, positive, and numerically stable across scales"
+        }
+      ],
+      "passed": 2,
+      "failed": 0
+    },
+    {
+      "name": "Explicit Formula Spectral Trace",
+      "tests": [
+        {
+          "name": "Conjugate Symmetry of Zero Pair Terms",
+          "status": "PASSED",
+          "duration_sec": 0.0001535420014988631,
+          "message": "Conjugate symmetry verified: imaginary components cancel to < 1e-10"
+        },
+        {
+          "name": "Spectral Trace Oscillation Boundedness S_8(x)",
+          "status": "PASSED",
+          "duration_sec": 0.00013625298743136227,
+          "message": "Truncated spectral sum S_8(x) remains strictly bounded within explicit formula envelope"
+        }
+      ],
+      "passed": 2,
+      "failed": 0
+    }
+  ],
+  "verdict": "PASSED",
+  "duration_sec": 0.0073427369934506714
+}

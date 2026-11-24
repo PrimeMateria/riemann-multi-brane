@@ -1,0 +1,6 @@
+name = "rh_zmb_host"
+version = "0.1.0"
+defaultTargets = ["RhZmbHost"]
+
+[[lean_lib]]
+name = "RhZmbHost"

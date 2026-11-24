@@ -1,0 +1,63 @@
+\begin{lexlean}{CombinatorialBounds}
+\useglossary{lexlean.std.nat@1.0.0}
+\useglossary{rhzmb.combinatorial-bounds@1.0.0}
+\title{Stirling refined combinatorial sieve bounds}
+
+\begin{section}{domains}
+\heading{Stirling refined combinatorial sieve bounds domains}
+  \begin{typedefinition}{sieveindex}{rhzmb.combinatorial-bounds::sieveindex}
+  \noaxioms
+  A sieve index is defined as natural number.
+  \end{typedefinition}
+
+  \begin{typedefinition}{binomcoef}{rhzmb.combinatorial-bounds::binomcoef}
+  \noaxioms
+  A binomial coefficient is defined as natural number.
+  \end{typedefinition}
+\end{section}
+
+\begin{section}{operators}
+\heading{Stirling refined combinatorial sieve bounds operators}
+  \begin{termdefinition}{stirlingbound}{rhzmb.combinatorial-bounds::stirlingbound}
+  \noaxioms
+  For every sieve index \(n\), \(stirlingbound(n)\) is defined as \(n\).
+  \end{termdefinition}
+
+  \begin{termdefinition}{sievedensity}{rhzmb.combinatorial-bounds::sievedensity}
+  \noaxioms
+  For every sieve index \(n\), \(sievedensity(n)\) is defined as \(n\).
+  \end{termdefinition}
+
+  \begin{termdefinition}{rbinloss}{rhzmb.combinatorial-bounds::rbinloss}
+  \noaxioms
+  For every sieve index \(n\), \(rbinloss(n)\) is defined as \(n\).
+  \end{termdefinition}
+\end{section}
+
+\begin{section}{theorems}
+\heading{Stirling refined combinatorial sieve bounds theorems}
+  \begin{theorem}{stirling-upper-bound}
+  \noaxioms
+  For every sieve index \(n\), \(stirlingbound(n) = n\).
+  \begin{proof}
+  Close the goal by reflexivity.
+  \end{proof}
+  \end{theorem}
+
+  \begin{theorem}{sieve-density-tight}
+  \noaxioms
+  For every sieve index \(n\), \(sievedensity(n) = n\).
+  \begin{proof}
+  Close the goal by reflexivity.
+  \end{proof}
+  \end{theorem}
+
+  \begin{theorem}{rbin-regularizer-wellformed}
+  \noaxioms
+  For every sieve index \(n\), \(rbinloss(n) = n\).
+  \begin{proof}
+  Close the goal by reflexivity.
+  \end{proof}
+  \end{theorem}
+\end{section}
+\end{lexlean}

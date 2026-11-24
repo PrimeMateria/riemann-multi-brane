@@ -1,0 +1,75 @@
+# .github/workflows/foundry-surface.yml
+name: Foundry Surface CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PRISMPM_BIN: ${{ github.workspace }}/tools/prismpm/target/release/prismpm
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+          components: rustfmt, clippy
+
+      - name: Build prismpm binary
+        run: |
+          cd tools/prismpm
+          cargo build -p prismpm --release
+          chmod +x "$PRISMPM_BIN"
+
+      - name: Add prismpm to PATH
+        run: echo "$PRISMPM_BIN" | xargs dirname >> $GITHUB_PATH
+
+      - name: Run Rust unit tests
+        run: |
+          cd REPOS/rh-zero-multi-brane
+          cargo test --all
+
+      - name: LexLean verification
+        run: |
+          cd REPOS/rh-zero-multi-brane
+          lexlean verify --all
+
+      - name: prismpm check
+        run: |
+          cd REPOS/rh-zero-multi-brane
+          prismpm check
+
+      - name: prismpm build (generate artefacts)
+        run: |
+          cd REPOS/rh-zero-multi-brane
+          prismpm build --project .
+
+      - name: Compute receipt drift
+        id: drift
+        run: |
+          cd REPOS/rh-zero-multi-brane
+          for f in artifacts/prism/*; do
+            sha256sum "$f" >> generated_hashes.txt
+          done
+          if ! diff -u artifacts/prism/receipt.json generated_hashes.txt; then
+            echo "drift=true" >> $GITHUB_OUTPUT
+          else
+            echo "drift=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Fail on receipt drift
+        if: steps.drift.outputs.drift == 'true'
+        run: |
+          echo "❌ Receipt drift detected – artefacts no longer match receipt.json"
+          exit 1
+
+      - name: Success marker
+        run: echo "✅ All checks passed"

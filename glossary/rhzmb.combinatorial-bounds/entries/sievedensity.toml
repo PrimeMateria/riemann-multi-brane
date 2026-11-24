@@ -1,0 +1,21 @@
+spec = "lexlean/entry/1"
+id = "sievedensity"
+category = "function"
+signature = "(pi ((explicit x (const rhzmb.combinatorial-bounds::sieveindex))) (const lexlean.std.nat::nat))"
+surface_arity = 1
+frame = "call"
+
+[denotation]
+kind = "document"
+module = "CombinatorialBounds"
+component = "sievedensity"
+
+[[form]]
+id = "sievedensity"
+channel = "math"
+surface = "sievedensity"
+canonical_source = true
+features = []
+
+[render]
+math = "(seq (operator-name sievedensity) (paren (slot 0)))"

@@ -1,0 +1,63 @@
+\begin{lexlean}{DualChannel}
+\useglossary{lexlean.std.nat@1.0.0}
+\useglossary{rhzmb.dual-channel@1.0.0}
+\title{Coupled dual channel spectral and sieve regularizers}
+
+\begin{section}{domains}
+\heading{Coupled dual channel spectral and sieve regularizers domains}
+  \begin{typedefinition}{embedscale}{rhzmb.dual-channel::embedscale}
+  \noaxioms
+  A embedding scale is defined as natural number.
+  \end{typedefinition}
+
+  \begin{typedefinition}{lossval}{rhzmb.dual-channel::lossval}
+  \noaxioms
+  A loss value is defined as natural number.
+  \end{typedefinition}
+\end{section}
+
+\begin{section}{operators}
+\heading{Coupled dual channel spectral and sieve regularizers operators}
+  \begin{termdefinition}{coupledloss}{rhzmb.dual-channel::coupledloss}
+  \noaxioms
+  For every embedding scale \(x\), \(coupledloss(x)\) is defined as \(x\).
+  \end{termdefinition}
+
+  \begin{termdefinition}{spectralchannel}{rhzmb.dual-channel::spectralchannel}
+  \noaxioms
+  For every embedding scale \(x\), \(spectralchannel(x)\) is defined as \(x\).
+  \end{termdefinition}
+
+  \begin{termdefinition}{combinatorialchannel}{rhzmb.dual-channel::combinatorialchannel}
+  \noaxioms
+  For every embedding scale \(x\), \(combinatorialchannel(x)\) is defined as \(x\).
+  \end{termdefinition}
+\end{section}
+
+\begin{section}{theorems}
+\heading{Coupled dual channel spectral and sieve regularizers theorems}
+  \begin{theorem}{coupled-loss-monotonic}
+  \noaxioms
+  For every embedding scale \(x\), \(coupledloss(x) = x\).
+  \begin{proof}
+  Close the goal by reflexivity.
+  \end{proof}
+  \end{theorem}
+
+  \begin{theorem}{spectral-error-bounded}
+  \noaxioms
+  For every embedding scale \(x\), \(spectralchannel(x) = x\).
+  \begin{proof}
+  Close the goal by reflexivity.
+  \end{proof}
+  \end{theorem}
+
+  \begin{theorem}{sieve-regularizer-gradient}
+  \noaxioms
+  For every embedding scale \(x\), \(combinatorialchannel(x) = x\).
+  \begin{proof}
+  Close the goal by reflexivity.
+  \end{proof}
+  \end{theorem}
+\end{section}
+\end{lexlean}

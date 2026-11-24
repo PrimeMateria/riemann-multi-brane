@@ -1,0 +1,125 @@
+{
+  "timestamp": "2026-11-24T06:58:50.911946",
+  "all_passed": true,
+  "total_duration_ms": 157.42108202539384,
+  "benchmarks": [
+    {
+      "id": "BENCH-01",
+      "name": "Sieve Asymptotics & Stirling Precision Scaling (n <= 10,000)",
+      "passed": true,
+      "duration_ms": 0.35667201154865324,
+      "n_evaluated": 8,
+      "max_n": 10000,
+      "final_rel_error": 2.5000240928774176e-05,
+      "records": [
+        {
+          "n": 10,
+          "rel_error": 0.02523035832895415,
+          "error_bound_1_over_128n2": 7.8125e-05,
+          "stirling_greater_exact": true,
+          "duration_ms": 0.02646801294758916
+        },
+        {
+          "n": 50,
+          "rel_error": 0.005009343554449375,
+          "error_bound_1_over_128n2": 3.125e-06,
+          "stirling_greater_exact": true,
+          "duration_ms": 0.006638991180807352
+        },
+        {
+          "n": 100,
+          "rel_error": 0.002502339831382816,
+          "error_bound_1_over_128n2": 7.8125e-07,
+          "stirling_greater_exact": true,
+          "duration_ms": 0.007577997166663408
+        },
+        {
+          "n": 500,
+          "rel_error": 0.0005000937185597465,
+          "error_bound_1_over_128n2": 3.125e-08,
+          "stirling_greater_exact": true,
+          "duration_ms": 0.0919350131880492
+        },
+        {
+          "n": 1000,
+          "rel_error": 0.0002500234335938156,
+          "error_bound_1_over_128n2": 7.8125e-09,
+          "stirling_greater_exact": true,
+          "duration_ms": 0.20599202252924442
+        },
+        {
+          "n": 2500,
+          "rel_error": 0.00010000374104768284,
+          "error_bound_1_over_128n2": 1.25e-09,
+          "stirling_greater_exact": true,
+          "duration_ms": 0.005856010830029845
+        },
+        {
+          "n": 5000,
+          "rel_error": 5.0000952247497565e-05,
+          "error_bound_1_over_128n2": 3.125e-10,
+          "stirling_greater_exact": true,
+          "duration_ms": 0.002643006155267358
+        },
+        {
+          "n": 10000,
+          "rel_error": 2.5000240928774176e-05,
+          "error_bound_1_over_128n2": 7.8125e-11,
+          "stirling_greater_exact": true,
+          "duration_ms": 0.0018329883459955454
+        }
+      ],
+      "summary": "Evaluated n in [10, 10000]; strictly majorizes exact comb; rel error decays to 2.500e-05 at n=10000."
+    },
+    {
+      "id": "BENCH-02",
+      "name": "Multi-Brane Hodge Intersection Eigenspectra (p_1000 = 7919)",
+      "passed": true,
+      "duration_ms": 120.21660100435838,
+      "eigensolve_ms": 81.796092010336,
+      "dimension": 1003,
+      "k_primes": 1000,
+      "largest_prime": 7919,
+      "h_squared": 2.0,
+      "positive_eigenvalues": 1,
+      "negative_eigenvalues": 1002,
+      "zero_eigenvalues": 0,
+      "max_eigenvalue": 4.1067469298317505,
+      "min_eigenvalue": -80.58717017881429,
+      "h_perp_orthogonal_checks": 50,
+      "h_perp_violations": 0,
+      "summary": "Constructed 1003x1003 intersection matrix across 1000 primes. Strict Lorentzian signature (1, 1002); H^2 = 2.0; 0 violations on H^perp."
+    },
+    {
+      "id": "BENCH-03",
+      "name": "Coupled Regularizer Gradient Stability Across Embedding Heights (t in [1, 500])",
+      "passed": true,
+      "duration_ms": 0.20424200920388103,
+      "height_samples": 50,
+      "t_range": [
+        1.0,
+        500.0
+      ],
+      "non_finite_count": 0,
+      "non_positive_grad_count": 0,
+      "min_log_gradient": 0.2623223997164227,
+      "max_log_gradient": 499.63348707941833,
+      "summary": "Swept t in [1.0, 500.0] across 50 heights. Zero overflow/underflow in log-coordinates; strictly positive monotonic gradients."
+    },
+    {
+      "id": "BENCH-04",
+      "name": "Explicit Formula Spectral Trace Throughput (10,000 Riemann Zeros)",
+      "passed": true,
+      "duration_ms": 36.64356700028293,
+      "zero_generation_ms": 34.30110399494879,
+      "evaluation_ms": 2.3372900031972677,
+      "n_zeros": 10000,
+      "max_zero_ordinate": 9878.696703871177,
+      "eval_points": 5,
+      "total_zero_evaluations": 50000,
+      "throughput_evals_per_sec": 21392296.177026857,
+      "max_imaginary_cancellation_error": 0.0,
+      "summary": "Evaluated 10,000 zeros up to gamma = 9878.70. Throughput = 21392296 evals/sec; conjugate imaginary error < 0.00e+00."
+    }
+  ]
+}

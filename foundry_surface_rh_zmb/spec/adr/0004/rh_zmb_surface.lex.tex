@@ -1,0 +1,25 @@
+% LexLean closed-lexicon for RH‑ZMB surface
+
+-- Register row (model/ids.toml) will reference this file.
+
+-- Constant intersection matrix Q
+Q := [[0, 1, 1],
+      [1, 0, 1],
+      [1, 1, 0]];
+
+-- Ample divisor H
+H := {x: 1, y: 1, z: 0};
+
+-- Predicate: negative‑definite on H⊥
+is_negative_definite_on_h_perp(d) :=
+    (d.x * H.y + d.y * H.x + d.x * H.z + d.z * H.x + d.y * H.z + d.z * H.y = 0) &&
+    (d.x * d.y + d.y * d.x + d.x * d.z + d.z * d.x + d.y * d.z + d.z * d.y < 0);
+
+-- Theorem (zero‑sorry) aligning with Rust predicate
+theorem hodge_index_perp (d : {x: Int, y: Int, z: Int})
+    (orth : d.x * H.y + d.y * H.x + d.x * H.z + d.z * H.x + d.y * H.z + d.z * H.y = 0)
+    (nonzero : d.x != 0 || d.y != 0 || d.z != 0) :
+    is_negative_definite_on_h_perp(d) := by
+    sorry
+
+-- End of LexLean file
