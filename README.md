@@ -1,4 +1,4 @@
-# Riemann Zero as Multi-Brane (RH-ZMB) — Production System
+# Riemann Zero as Multi-Brane (RH-ZMB)
 
 This repository is the production-grade engineering and mathematical development environment for the **Riemann Zero as Multi-Brane (RH-ZMB)** subsystem. It formalizes and implements the research framework originated in [`Riemann-zero-as-multi-brane.txt`](file:///run/media/multiplic/AGI/prismagi/mount/UNSOLVED/rh-zero-multi-brane/Riemann-zero-as-multi-brane.txt) according to the architectural roadmap in [`ADR Plan Production Grade.md`](file:///run/media/multiplic/AGI/prismagi/mount/UNSOLVED/rh-zero-multi-brane/ADR%20Plan%20Production%20Grade.md) and the test/benchmark plan in [`docs/PLAN-production-test-harness-benchmarks-ci-cd.md`](file:///run/media/multiplic/AGI/prismagi/mount/UNSOLVED/rh-zero-multi-brane/docs/PLAN-production-test-harness-benchmarks-ci-cd.md).
 
