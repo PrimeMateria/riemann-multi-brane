@@ -1,0 +1,8 @@
+{
+  "erased_proof_dependencies": [],
+  "external_calls": [],
+  "included_definitions": ["RhZmb.RhZmb.acceptance","RhZmb.RhZmb.identity"],
+  "opaque_nodes": [],
+  "requested_roots": ["RhZmb.RhZmb.acceptance","RhZmb.RhZmb.identity"],
+  "unsupported_types": []
+}

@@ -2,3 +2,4 @@
 .lexlean/
 __pycache__/
 *.pyc
+tools/bin/

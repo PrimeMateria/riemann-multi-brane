@@ -1,0 +1,40 @@
+{
+  "schema": "foundry/phase-mirror-receipt/v1",
+  "surface_crate": "foundry_surface_rh_zmb",
+  "version": "0.1.0",
+  "model_content_hash": "06a5d485a84e6434b22443b77b75627259663470eae4f1938122ae81e05663af",
+  "semantic_id": "83d06f45ff166e4e0b7ef883fe6b88d2f2075cb28903b71c3cfded4dc315d7b3",
+  "lexlean_source_id": "97b8d8fd426d17f8dca2d674973080e592b39c9e14993ab05a04370d9e3283e2",
+  "lexlean_build_id": "c8647fc0ff4e946ecdbc7bb56a47b7e61ee133e7b186901d9808753ec370970a",
+  "artifacts": {
+    "build-summary.json": {
+      "sha256": "c19e33e294817027402117ba65d92846810143efd1144c82d5aa42733710654a",
+      "bytes": 652
+    },
+    "coverage.json": {
+      "sha256": "d1c1bfd05c97652c5c3c7d9fca186283f26128396bedebf3a97793e90f3ad353",
+      "bytes": 260
+    },
+    "kernel.ir": {
+      "sha256": "96d784e01ee08d7e1ae3fe650e6fc15224c5765297b1c5ab423036b9c993d01e",
+      "bytes": 331
+    },
+    "manifest.json": {
+      "sha256": "87b314789a48e889704c18a239bb719e163cb8ee4d13634e70a047e6d2779c78",
+      "bytes": 5326
+    },
+    "model.prism.json": {
+      "sha256": "06a5d485a84e6434b22443b77b75627259663470eae4f1938122ae81e05663af",
+      "bytes": 1352
+    },
+    "rh-zero-multi-brane-0.1.0.crate": {
+      "sha256": "7bd79a70dd14767dcca2ec69449a2f7fc15cf931c1d568724e89791b1de63736",
+      "bytes": 5883
+    },
+    "roots.json": {
+      "sha256": "a88db16ae7adb4558b5431edd9e61dc5a1a0e6498d39b13842f3b2c2f18341ff",
+      "bytes": 187
+    }
+  },
+  "verified": true
+}
