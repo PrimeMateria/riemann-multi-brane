@@ -3,7 +3,7 @@ THE PRIME MATERIA OPEN COMMONS AND BOUND WORKS LICENSE
 Version 1.0
 
 Steward: The Prime Materia Commons & UOR Foundation "Citizen Gardens"
-Contributors: Martin Gibson, Tyler Van Osdol, Kevin Knapp, Alex Flom, Ryan O. Van Gelder
+Contributors: Martin Gibson, Tyler Van Osdol, Kenneth Parrot, Mubeen Muhammad, Kevin Knapp, Alex Flom, Ryan O. Van Gelder
 Thanks to everyone!   
 Registry:   Operator Atlas — uor.foundation
 Repository: https://github.com/PrimeMateria/riemann-multi-brane
